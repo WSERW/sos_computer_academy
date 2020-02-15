@@ -1,0 +1,36 @@
+@font-face {
+font-family: 'Nexa Script Regular';
+src: url('NexaScript-Regular.eot');
+src: url('NexaScript-Regular.eot?#iefix') format('embedded-opentype'),
+url('NexaScript-Regular.woff') format('woff'),
+url('NexaScript-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+/*body *{
+	border:solid;
+}*/
+.nothing{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100vh - 180px);
+}
+.NaN{
+	display: flex;
+	justify-content: center;
+	align-items:center; 
+}
+.NaN::before, .NaN::after{
+	content: "4";
+	font-family: Nexa Script Regular;
+	font-size: 17em;
+	font-weight: 600;
+}
+.back{
+	border-radius: 31px;
+	box-shadow: none;
+	width: 	190px;
+	color: 	white;
+	text-transform: uppercase;		
+	}
