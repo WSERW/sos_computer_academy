@@ -11,11 +11,11 @@
 </head>
 <body>
 	{% include 'navbar.html' %}
-	<div class="container mb-5">
-		<div class="first-block">
+	<div class="first-block">
+	<div class="container">
 		<div class="row justify-content-center align-items-center">
 			<div class="col col-xl-5">
-				<p class="jumbotron jumbotron-fluid main-text  text-center text-lg-right" >ДОСТОЙНОЕ<br>ОБРАЗОВАНИЕ<br>ДОСТУПНО<br>КАЖДОМУ<br>ВМЕСТЕ С<br><span style="color: #d4b432;"> СОС&nbspКОМПЬЮТЕР  </span></p>
+				<p class="jumbotron jumbotron-fluid main-text  text-center text-lg-right" >ДОСТОЙНОЕ<br>ОБРАЗОВАНИЕ<br>ДОСТУПНО<br>КАЖДОМУ<br>ВМЕСТЕ С<br><span class="sos_brand">СОС&nbspКОМПЬЮТЕР  </span></p>
 			</div>
 			<div class="col col-xl-4">
 				<img  class="main-img" src="https://www.meme-arsenal.com/memes/2fbd653ecba0d0f3caab8a9963589a61.jpg">
@@ -23,7 +23,7 @@
 			</div>
 		</div>
 	</div>
-		<div class="container my-5">
+		<div class="container">
 			<div class="row ">
 				<div class="col-xl-6 d-flex justify-content-center">
 					<img class="hist-img" src="https://helpiks.org/helpiksorg/baza6/26713850288.files/image012.jpg">
@@ -73,12 +73,12 @@
 				<div class="col-xl-3 offset-xl-2 d-flex flex-column align-items-center p-5">
 					<div class="rhombus rh-lg mb-5">
 						<div class="rhombus-content">
-							картинка
+							<img src="{% static 'png/adult.png'%}" alt="">
 						</div>
 					</div>
 					<p>Для взрослых</p>
 					<p class="t-orange bold">от 18 лет</p>
-					<a class="" href="">Смотреть курсы</a>
+					<a class="" href="/course_ad">Смотреть курсы</a>
 				</div>				
 			</div>
 		</div>	
@@ -121,8 +121,8 @@
 			<div class="row d-flex justify-content-center">
 				<div class="col-xl-3 d-flex flex-column align-items-center p-5">
 					<div class="rhombus rh-lg mb-5">
-						<div class="rhombus-content rh-lg ">
-							картинка
+						<div class="rhombus-content">
+							<img src="{% static 'png/stationar.png'%}" alt="">
 						</div>
 					</div>
 					<p>Для детей и взрослых</p>
@@ -132,7 +132,7 @@
 				<div class="col-xl-3 offset-xl-2 d-flex flex-column align-items-center p-5">
 					<div class="rhombus rh-lg mb-5">
 						<div class="rhombus-content">
-							картинка
+							<img src="{% static 'png/repetitor.png'%}" alt="">
 						</div>
 					</div>
 					<p>Для детей и взрослых</p>
@@ -163,8 +163,8 @@
 			<div class="row d-flex justify-content-center">
 				<div class="col-xl-3 d-flex flex-column align-items-center p-5">
 					<div class="rhombus rh-lg mb-5">
-						<div class="rhombus-content rh-lg ">
-							картинка
+						<div class="rhombus-content">
+							<img src="{% static 'png/brand.png'%}" alt="">
 						</div>
 					</div>
 					<p class="t-orange bold">Свой бренд</p>
@@ -173,16 +173,16 @@
 				<div class="col-xl-3 offset-xl-1 d-flex flex-column align-items-center p-5">
 					<div class="rhombus rh-lg mb-5">
 						<div class="rhombus-content">
-							картинка
+							<img src="{% static 'png/stud.png'%}" alt="">
 						</div>
 					</div>
 					<p class="t-orange bold">Студия</p>
-					<a class="" href="">Смотреть примеры</a>
+					<a class="" href="/stud">Смотреть примеры</a>
 				</div>
 				<div class="col-xl-3 offset-xl-1 d-flex flex-column align-items-center p-5">
 					<div class="rhombus rh-lg mb-5">
 						<div class="rhombus-content">
-							картинка
+							<img src="{% static 'png/fl.png'%}" alt="">
 						</div>
 					</div>
 					<p class="t-orange bold">Фриланс</p>
@@ -243,6 +243,8 @@
 				</div>
 			</div>
 		</footer>
+<script src="{% static 'libs/js/jquary.min.js' %}"></script>
 <script src="{% static 'libs/js/bootstrap.min.js' %}"></script>
+
 </body>
 </html>

@@ -19,12 +19,18 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+*::selection{
+	background-color: #fff;
+	color:#20222d;
+}
 *{
 	margin: 0;
 	padding: 0;
-
+scroll-behavior: smooth;
 }
+
 body{
+	scroll-behavior: smooth;
 	font-family: Open Sans;
 	color: white;
 	background: #20222d;
@@ -55,12 +61,13 @@ button{
 }
 button:focus{
 	outline: none;
+
 }
-/*body * {
-	border: dashed red; 
-}*/
+body * {
+	/*outline: dashed white 1px; */
+}
 .nav-main{
-	position: relative;
+	/*position: relative;*/
 	height: 105px;
 	width: 100%;
 }
@@ -72,15 +79,10 @@ button:focus{
 .bold{
 	font-weight: 700;
 }
-.nav{
+nav{
 	background:  #20222d;
-	position: fixed;
-	height: 105px;
-	width: 100%;
 	padding: 0 25px 0 20px;
-	overflow: hidden;
-	z-index: 9999;
-	flex-wrap: nowrap;
+	border-bottom: 1px solid #d4b432;
 }
 .ico{
 	display: flex;
@@ -94,16 +96,20 @@ button:focus{
 
 }
 .nav-list{
-	width: 60%;
+	/*border: solid;*/
     display: flex;
     justify-content: space-between;
     margin-left: auto;
-    flex-wrap:nowrap;
+    /*flex-wrap:nowrap;*/
+
 }
 .nav-item{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-left: 30px;
+	/*align-items: center;
+	/*justify-content: center;*/
+}
+.nav-item:first-child{
+	margin-left: 0;
 }
 .nav-btn{
 	text-decoration: none;
@@ -111,52 +117,68 @@ button:focus{
 	float: right;
 	white-space: nowrap;
 }
+.navbar-toggler{
+	display: block/* !important*/;
+}
 .rhombus{
 	transform: rotate(45deg);
 	background: #2b2d3c;
 	width: 40px;
 	height: 40px;
-}
-.burger{ 
-		position: absolute; 
-		margin: 28px 20px;
-		height: 1px;
-		width: 15px;
-		background-color: white;	
-}
-.burger::before,.burger::after{
-		content: " ";
-		position: absolute;
-		height: 1px;
-		width: 15px;
-		background-color: white;
-}
-.burger::before{
-	margin-left: -8px; 
-	margin-top: -5px; 
-}
-.burger::after{
-	margin-left: -8px; 
-	margin-top: 5px; 
-}
 
-.rh-lg{
-	width: 150px;
-	height: 150px;
-	margin-left: -10px;
 }
 .rhombus-content{
+	position: relative;
 	text-align: center;	
 	margin-top: -20%;
 	margin-left: -20%;
 	transform: rotate(-45deg);
 	width: 140%;
 	height: 140%;
+
 }
+
+.burger{ 
+		position: absolute; 
+		margin-top: 40%;
+		margin-left: 45%;
+		height: 1px;
+		width: 15px;
+		background-color: white;	
+}
+.burger::before,.burger::after{
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 15px;
+		background-color: white;
+}
+.burger::before{
+	margin-left: -7.5px; 
+	margin-top: -5px; 
+}
+.burger::after{
+	margin-left: -7.5px; 
+	margin-top: 5px; 
+}
+
+.rh-lg{
+	width: 150px;
+	height: 150px;
+	transition: 0.5s;
+}
+
 .rhombus-content img{
-	margin-left: 20px;
-	max-width: 100%;
-	max-height: 100%;
+	transition: 0.5s;
+	width: 210px;
+	height: 210px;
+
+}
+.rhombus:hover img{
+	transform: translateX(30px);
+}
+.rh-lg:hover{
+	transform: rotate(45deg) translate(-10px, 10px);
 }
 .nums{
 }
@@ -178,24 +200,35 @@ button:focus{
 
 .call:hover{
 	text-decoration: none;
-	background: linear-gradient(#d4b432,#E0972B);
+	background:#E0972B;
 }
 .call:active{
 	text-decoration: none;
 	box-shadow: none;
-	background: linear-gradient(#E0972B,#d4b432);
+	background: #d08590;
 }
 .call:not(:disabled){
 	box-shadow: none;
 	text-decoration: none;
 }
+.first-block{
+	text-align: center;
+	margin-top:105px;
+	min-height: calc(95vh - 105px);
+	display: flex;
+	align-items: center;
+}
 .main-text{
+	display: inline-block;
 	font-family: Open Sans Black;
 	font-size: 50px;
 	text-align: right;
 	background-color: inherit;
-	text-overflow: ellipsis;
 	white-space: nowrap;
+}
+.sos_brand{
+	color: #d4b432;
+	display: inline-block;
 }
 .main-img{
 	display: block;
@@ -259,8 +292,8 @@ button:focus{
 	/* смещаем правую линию вправо отрицательным отступом, равным 100% ширины
 	** благодаря этому линия встает справа от текста
 	*/
-	margin-left: 70px; /* 30 */
-	margin-top: -20px; /* 25 */
+	margin-left: 30px; /* 30 */
+	margin-top: 25px; /* 25 */
 /*	-webkit-margin-start: 30px;
 	-moz-margin-start:30px;
 	-webkit-margin-before: 25px;
@@ -387,6 +420,45 @@ button:focus{
 	margin-left: calc(100% - 170px);
 	margin-top: -24px;
 }
+
+
+.heading,.heading-2{
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+	font-size: 30px;
+
+}
+.heading::before,
+.heading::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 165px;
+	height: 2px;
+	background: #fff;
+	margin-top: -7px;
+}
+.heading-2::before,
+.heading-2::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 250px;
+	height: 2px;
+	background: #FFF;
+	margin-top: 5px;
+}
+.heading-2::before {
+	margin-right: -172.8px;
+}
+.heading-2::after {
+	margin-left: -172.8px;
+}
+
+
+
+
 
 
 

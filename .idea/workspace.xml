@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e538b10d-22e6-466a-a7c4-c3a883a03c2a" name="Default Changelist" comment="" />
+    <list default="true" id="e538b10d-22e6-466a-a7c4-c3a883a03c2a" name="Default Changelist" comment="v1.2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/adult.html" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/adult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/stud.html" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/templates/stud.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sos_computer_academy/main_sos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sos_computer_academy/main_sos/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +47,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/sos_computer_academy/main_sos/templates" />
   </component>
   <component name="RecentsManager">
@@ -82,11 +94,11 @@
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="294" y="93" key="CommitChangelistDialog2/0.0.1280.994/-1280.0.1280.1024@0.0.1280.994" timestamp="1581804133883" />
-    <state x="335" y="320" key="com.intellij.ide.util.TipDialog" timestamp="1581786293224">
+    <state x="335" y="320" key="com.intellij.ide.util.TipDialog" timestamp="1585403259467">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
     <state x="-945" y="330" key="com.intellij.ide.util.TipDialog/0.0.1280.994/-1280.0.1280.1024@-1280.0.1280.1024" timestamp="1581614810574" />
-    <state x="335" y="320" key="com.intellij.ide.util.TipDialog/0.0.1280.994/-1280.0.1280.1024@0.0.1280.994" timestamp="1581786293224" />
+    <state x="335" y="320" key="com.intellij.ide.util.TipDialog/0.0.1280.994/-1280.0.1280.1024@0.0.1280.994" timestamp="1585403259467" />
     <state x="303" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1581514922047">
       <screen x="0" y="0" width="1280" height="994" />
     </state>
